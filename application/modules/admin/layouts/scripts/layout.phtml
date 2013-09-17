@@ -1,0 +1,83 @@
+<?php echo $this->doctype() ?> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+<?php
+	$request = Zend_Controller_Front::getInstance()->getRequest();
+	$this->headTitle("Admin", "PREPEND");
+	$this->headTitle(ucfirst($request->getControllerName()));
+	$this->headTitle()->setSeparator(' - ');
+	
+ 	$this->headLink()
+		->appendStylesheet('/_includes/css/lib/reset.css', 'screen')
+		->appendStylesheet('/_includes/css/admin/admin.css', 'screen')
+		->appendStylesheet('/_includes/css/admin/jquery-ui.css', 'screen')
+		->appendStylesheet('/_includes/css/admin/ie8.css', 'screen', 'IE 8');
+ 	
+	$this->headScript()->appendFile('http://www.google.com/jsapi');
+ 	$this->headScript()->appendScript('google.load("jquery", "1.4.2");');
+
+	$this->headScript()
+		->appendFile('/_includes/js/admin/editor/tinymce/tiny_mce.js')
+		->appendFile('/_includes/js/admin/ui/jquery.ui.js')
+		->appendFile('/_includes/js/admin/table/jquery.datatables.js')
+		->appendFile('/_includes/js/admin/form/jquery.infieldlabel.js')
+		->appendFile('/_includes/js/admin/init.js');
+		//->appendFile('/_includes/js/admin/tinymce-gzip.js');		 		 	
+?>
+		
+<?php echo $this->headMeta()->setIndent('		'); ?> 
+
+<?php echo $this->headTitle()->setIndent('		'); ?> 
+
+<?php echo $this->headLink()->setIndent('		'); ?> 
+<?php echo $this->headStyle()->setIndent('		'); ?> 
+
+<?php echo $this->headScript()->setIndent('		'); ?> 
+		
+    </head>
+
+    <body id="admin" class="<?php echo $request->getControllerName(); ?>">
+
+    	<div id="wrapper">
+    	
+    		<?php if (!isset($this->login)): ?>
+    		
+    			<div class="ui-helper-clearfix">
+    			
+		        	<div id="system-nav" class="ui-helper-clearfix">
+		        	
+		        		<ul>
+		        			<li><a href="<?php echo $this->url(array('module'=>'admin', 'controller'=>'user', 'action'=>'logout'), 'default', true) ?>">Sign out</a></li>
+		        		</ul>
+		        	
+		        		<dl>
+		        			<dt>View:</dt>	
+		        			<dd class="nth-child-0"><a href="http://www.google.com/analytics/" rel="external">Web stats</a></dd>        			
+		        			<dd><a href="/" rel="external">Site</a></dd>
+							<dd><a href="/admin/<?php echo $request->getControllerName(); ?>/log" rel="external">Log</a></dd>
+		        		</dl>
+	
+		        	</div>
+		
+		        	<div id="navigation" class="ui-helper-clearfix">
+
+		        		<?php 
+							$acl = Zend_Controller_Front::getInstance()->getParam('acl');
+							$role = Zend_Auth::getInstance()->getIdentity()->role;
+							
+		        			$navigation = $this->navigation()->setAcl($acl)->setRole($role)->findOneByLabel('Admin')->setVisible(1);	
+		        			echo $this->navigation()->menu()->setUseTranslator(false)->renderMenu($navigation, array('maxDepth' => 0)); 	        		
+		        		?>
+		 
+	        		</div>
+        		
+        		</div>
+        			
+        	<?php endif; ?>
+        	
+        	<div id="content" class="ui-helper-clearfix">
+        		<?php echo $this->layout()->content ?>
+        	</div>	       
+	   </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+/**
+ * ie8
+ *
+ * @author richard hallows
+ */
+
+/* default styles */
+
+	/* forms */
+	
+		form legend {
+			display: block !important;
+			height: 0;
+			margin: 0;
+			padding: 0;
+			width: 0;
+			visibility: hidden;
+		}
+		
+		/* fieldset-data elements */
+		
+			form #fieldset-data input[type="checkbox"] {
+				margin: -3px 0 0 -3px;
+			}
+			
+			/* tinymce element */
+			
+				form #fieldset-data .mceEditor { 
+					display: block;
+					border-bottom: 1px solid #ccc;
+				}	
+				
+				form #fieldset-data .mceEditor table tr {
+					background-color: #F0F0EE !important;
+				}

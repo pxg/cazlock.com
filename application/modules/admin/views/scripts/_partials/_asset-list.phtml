@@ -1,0 +1,67 @@
+<div id="items">
+
+	<?php if (count($this->items) > 0): ?>
+	
+	<?php $class = (true == $this->isSortable) ? ' sortable' : '';?>
+	
+		<ul id="<?php echo $this->controllerName;?>" class="asset-list<?php echo $class; ?>">
+			
+			<?php foreach ($this->items as $i => $item): ?>
+			
+				<?php $class = (null != $this->form->getElement('id') && $item->id == $this->form->getElement('id')->getValue()) ? '  selected' : '';?>
+				<?php $class .= (1 == $item->isPublished) ? ' published' : ' unpublished'; ?>
+								
+				<li id="item-<?php echo $this->escape($item->id); ?>" class="asset<?php echo $class; ?>">
+						
+					<ul class="icons clearfix">
+						<?php if (true == $this->isSortable): ?>
+							<li class="ui-state-default ui-corner-all" title="Drag this item">
+								<span class="ui-icon ui-icon-grip-dotted-vertical handle"></span>
+							</li>
+						<?php endif; ?>
+						<?php if (true == $this->isTrashable): ?>
+						<li class="ui-state-default ui-corner-all">
+							<a title="Trash this item" href="
+								<?php 
+									echo $this->url(
+										array(
+											'module' => 'admin', 
+											'controller' => $this->controllerName,
+											'action' => 'trash',
+											'id' => $this->escape($item->id)
+										), 
+										'default', 
+										true
+									);
+								?>
+							">
+								<span class="ui-icon ui-icon-trash"></span>
+							</a>	
+						</li>
+						<?php endif; ?>
+					</ul>
+								
+					<a title="Edit this item" class="edit" href="
+						<?php 
+							echo $this->url(
+								array(
+									'controller' => $this->controllerName,
+									'action' => 'index',
+									'id' => $this->escape($item->id)
+								)
+							);
+						?>
+					">
+						<img src="<?php echo $this->baseUrl(); ?>/_includes/uploads/<?php echo $this->escape($item->imageThumbnailCmt); ?>" alt="" />			
+					</a>
+						
+				</li>	
+						
+			<?php endforeach; ?>
+
+		</ul>
+
+	<?php else: ?>	
+		<?php echo $this->partial('_partials/_status/_info.phtml'); ?>
+	<?php endif; ?>
+</div>

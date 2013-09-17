@@ -1,0 +1,356 @@
+Ace
+Acura
+Admiral
+Advent
+Adyson
+Akai
+Akura
+Alba
+Allorgan
+Amplivision
+Amstrad
+Andrea Electronics
+Anitech
+AOC International
+Arcam
+Arena
+Argosy
+Asuka
+Atlantic
+Atwater Television
+Audar
+Audiosonic
+Automatic Radio Manufacturing
+Autovox
+Bace Television
+Baird
+Bang & Olufsen
+Basic Line
+Baur
+Beko
+Bell Television
+Beon
+Binatone
+Blaupunkt
+Blue Sky
+Blue Star
+Bondstec
+Boots
+BPL
+Brandt
+Brionvega
+Britannia
+BSR
+BTC
+Bush Radio
+Calbest Electronics
+Capehart Electronics
+Carrefour
+Cascade
+Cathay
+Centurion
+Certified Radio Labs
+CGE
+Cimline
+Clairetone Electric Corporation
+Clarivox
+Clatronic
+Colonial Radio
+Color Electronics Corporation
+Conar Instruments
+Condor
+Contec
+Continental Edison
+Cortron Industries
+Cossor
+Crown
+Crystal
+CS Electronics
+CTC
+Curtis Mathes Corporation
+Cybertron
+Daewoo
+Dainichi
+Dansai
+Dayton
+De Graaf
+Decca
+Deccacolour
+Defiant
+Delmonico International Corporation
+Dixi
+Dual
+Dual Tec
+Dumont
+DuMont Laboratories
+Durabrand
+Dynatron
+EKCO
+Elbe
+Element Electronics
+Elin
+Elite
+Elta
+Emerson
+Emerson Radio and Phonograph
+EMI
+English Electric Valve Company
+Erres
+Expert
+Farnsworth Television and Radio
+Ferguson Electronics
+Ferranti
+Fidelity Radio
+Finlandia
+Finlux
+Firstline
+Fisher Electronics
+Flint
+Formenti
+Frontech
+Fujitsu
+Funai Electric
+Geloso
+General Electric
+General Electric Company plc
+Genexxa
+GoldStar
+Goodmans Industries
+Gorenje
+GPM
+Gradiente
+Graetz
+Granada
+Grandin
+Grundig
+Hanseatic
+Harvard International
+Harvey Industries
+HCM
+Heath Company
+Heathkit
+Hinari Domestic Applicanes
+Hisawa
+Hitachi
+HMV
+Hoffman Electronics
+Hoffman Products
+Hoffman Radio
+Hoffman Television
+Howard Radio
+Huanyu
+Hypson
+Ice
+Ices
+Imperial
+Indiana
+Ingelen
+Inno Hit
+Interfunk
+Intervision
+Isukai
+ITS
+ITT
+ITT Corporation
+IZUMI
+Jensen Loudspeakers
+Jerrold Electronics
+JMB
+JVC
+Kaisui
+Kane Electronics Corporation
+Kapsch
+Kathrein
+Kendo
+Kent Television
+Kingsley
+Kloss Video
+Kneissel
+Kogan
+Kolster-Brandes
+Korpel
+Koyoda
+Lanix
+Leyco
+LG Electronics
+Liesenk and Tter
+Loewe AG
+Luma
+Luxor
+M Electronic
+Magnadyne
+Magnafon
+Magnavox
+Maneth
+Marantz
+Marconiphone
+Mark
+Matsui
+Matsushita
+Mattison Electronics
+McMichael Radio
+Mediator
+Memorex
+Memphis
+Mercury-Pacific
+Metz
+Minerva
+Minoka
+Mitsubishi
+Mivar
+Motorola
+MTC
+Multitech
+Muntz
+Murphy Radio
+National
+NEC
+Neckermann
+NEI
+Nikkai
+Nobliko
+Nokia
+Nordmende
+North American Audio, Inc.
+Oceanic
+Olympic Radio and Television
+Onida
+Onwa
+Orion
+Osaki
+Oso
+Osume
+Otake
+Otto Versand
+Packard Bell
+Palladium
+Panama
+Panasonic
+Pathe Cinema
+Pathe Marconi
+Pausa
+Perdio
+Peto Scott
+Philco
+Philco-Ford
+Philips
+Philmore Manufacturing
+Phonola
+Pilot Radio
+Pilot Radio Corporation
+Pioneer Electronics
+Profex
+ProLine
+ProScan
+ProTech
+Pye
+Quasar
+Quelle
+Questa
+R-Line
+Radiola
+RadioMarelli
+Ramsa
+Rank Arena
+Ravenswood
+RBM
+RCA
+Rediffusion
+Regentone
+Revox
+Rex
+RGD
+Roadstar
+Saba
+Saccs
+Saisho
+Salora
+Sambers
+Sampo Corp. of America
+Sanabria Television Corporation
+Sandra
+Sansui
+Sanyo
+SBR
+Schaub Lorenz
+Schneider Electric
+SEG
+SEI
+Sei-Sinudyne
+Sentra
+Setchell Carlson
+Sharp
+Shorai
+Siarem
+Siemens AG
+Silver
+Sinudyne
+Sobell
+Solavox
+Sonitron
+Sonoko
+Sonolor
+Sonora
+Sontec
+Sony
+Soundwave
+Standard
+Stern
+Stromberg Carlson
+Sunkai
+Susumu
+Sylvania
+Symphonic Electronic Corp
+Symphonic Radio and Electronics
+Sysline
+Sèleco
+Tandy
+Tashiko
+Tatung Company
+Tec
+Tech-Master
+Technema
+Technics
+Teleavia
+Teledyne Packard Bell
+Telefunken
+Telemeister
+Telequip
+Teletech
+Teleton
+Teletronics
+Television, Inc.
+Tensai
+Texet
+Thomson SA
+Thorn Electrical Industries
+Thorn EMI
+TMA
+Tomashi
+Toshiba
+Transvision
+Trav-Ler Radop
+Triumph
+Uher
+Ultra
+Ultravox
+United States Television Manufacturing Corp.
+Universum
+Vestel
+Videocon
+Videosat
+Videotechnic
+Vision
+Vizio
+Vu
+Waltham
+Warwick
+Watson
+Watt Radio
+Wells-Gardner
+Westinghouse
+White-Westinghouse
+Yoko
+Zanussi
+Zenith Radio
+Zonda

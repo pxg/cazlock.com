@@ -1,0 +1,20 @@
+<?php if($this->view->failedValidation): ?>
+
+	<?php 
+		echo $this->partial('_partials/_status/_alert.phtml'); 
+	?>
+
+<?php elseif($this->view->wasSaved): ?>
+
+	<?php 
+		echo $this->partial('_partials/_status/_success.phtml'); 
+	?>
+	
+<?php elseif($this->view->wasTrashed): ?>
+
+	<?php 
+		echo $this->partial('_partials/_status/_success.phtml',
+				array('type' => 'trash')); 
+	?>
+
+<?php endif; ?>

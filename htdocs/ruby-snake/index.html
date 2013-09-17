@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            html, 
+            body, 
+            #container {
+                height:100%;
+            }
+            body {
+                background:#000;
+            }
+            #container {    
+                display:table;
+                margin:0 auto;                
+            } 
+            #canvas-wrap {
+                display:table-cell;
+                vertical-align:middle;
+            }
+            #myCanvas {
+                border: 1px solid #fbbd27;
+            }
+        </style>
+        <script src="animation.js">
+        </script>
+        <script src="Controller.js">
+        </script>
+        <script src="Model.js">
+        </script>
+        <script src="View.js">
+        </script>
+        <script src="Level.js">
+        </script>
+        <script src="Actor.js">
+        </script>
+        <script src="HealthBar.js">
+        </script>
+        <script>
+            window.onload = function(){
+                new Controller("myCanvas");
+            };
+        </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head>
+    <body>
+        <div id="container">
+            <div id="canvas-wrap">
+                <canvas id="myCanvas" width="900" height="600"></canvas>
+            </div>
+        </div>
+    </body>
+</html>

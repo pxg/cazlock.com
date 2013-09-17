@@ -1,0 +1,42 @@
+<h1>Manage pages</h1>
+
+<?php echo $this->partial('_partials/_status.phtml', array('view' => $this)); ?>
+
+<?php 
+	echo $this->partial('_partials/_form.phtml', 
+		array(
+			'form' => $this->form,
+			'controllerName' => $this->controllerName,
+			'titleFieldName' => 'title',
+		)
+	); 
+?>
+
+<?php 
+	echo $this->partial('_partials/_table.phtml', 
+		array(
+			'isTrashable' => true,
+			'isSelectable' => false,
+			'isOrderable' => false,
+			'isSortable' => false,
+			'fields' => array(
+				'name' => array(
+					'headingName' => 'Name',
+					'isActionField' => true,
+				),
+				'title' => array(
+					'headingName' => 'Title',
+				
+				),		
+				'body' => array(
+					'headingName' => 'Body',
+//					'viewHelperName' => 'truncate'
+				),	
+			),
+			'items' => $this->items,
+			'form' => $this->form,
+			'controllerName' => $this->controllerName,
+		)
+	); 
+?>
+

@@ -1,0 +1,102 @@
+<div id="items">
+
+	<?php if (count($this->items) > 0): ?>
+		<table>
+			<thead>
+				<tr class="ui-widget-header">
+					<?php foreach ($this->fields as $fieldName => $options): ?>		      	
+						<th scope="col"><?php echo $options['headingName']; ?> </th>
+					<?php endforeach; ?>
+				</tr>
+			</thead>		
+			<tbody class="sortable selectable" id="<?php echo $this->controllerName;?>">
+			
+				<?php foreach ($this->items as $i => $item): ?>
+				
+					<?php 
+						// repeat headings every X rows
+						$repeatEvery = 10;
+						if (($i > 0) && ($i % $repeatEvery == 0)) :
+					 ?>
+						<tr class="ui-widget-header">
+							<?php foreach ($this->fields as $fieldName => $options): ?>		      	
+								<th scope="col"><?php echo $options['headingName']; ?> </th>
+							<?php endforeach; ?>
+						</tr>
+					<?php endif; ?>
+					
+					
+					<?php $class = (null != $this->form->getElement('id') && $item->id == $this->form->getElement('id')->getValue()) ? '  class="selected"' : '';?>
+					
+					<tr id="item-<?php echo $this->escape($item->id); ?>"<?php echo $class; ?>>
+						
+						<?php foreach ($this->fields as $fieldName => $options): ?>
+						
+							<td>
+								<?php if (isset($options['isActionField']) && true == $options['isActionField']): ?>
+								
+									<ul class="icons">
+										<li class="ui-state-default ui-corner-all">
+											<a title="Edit this item" class="edit" href="
+												<?php 
+													echo $this->url(
+														array(
+															'controller' => $this->controllerName,
+															'action' => 'index',
+															'id' => $this->escape($item->id)
+														)
+													);
+												?>
+											">
+												<?php //echo $this->escape($item->$fieldName); ?>
+												<span class="ui-icon ui-icon-pencil"></span>
+											</a>
+										</li>
+										<?php if (true == $this->isSortable): ?>
+											<li class="ui-state-default ui-corner-all" title="Reorder this item">
+												<span class="ui-icon ui-icon-grip-dotted-vertical handle"></span>
+											</li>
+										<?php endif; ?>
+										<?php if (true == $this->isTrashable): ?>
+										<li class="ui-state-default ui-corner-all">
+											<a class="trash" id="is_trashed-<?php echo $item->id; ?>" title="Trash this item" href="
+												<?php 
+													echo $this->url(
+														array(
+															'module' => 'admin', 
+															'controller' => $this->controllerName,
+															'action' => 'trash',
+															'id' => $this->escape($item->id)
+														), 
+														'default', 
+														true
+													);
+												?>
+											">
+												<span class="ui-icon ui-icon-trash"></span>
+											</a>	
+										</li>
+										<?php endif; ?>
+									</ul>
+										
+
+									
+								<?php elseif (isset($options['viewHelperName'])): ?>
+									<?php echo $this->$options['viewHelperName']($item->$fieldName, $item->id, $fieldName); ?>            
+								<?php else: ?>	
+									<?php echo $item->$fieldName; ?>
+								<?php endif; ?>	
+							</td>
+						
+						<?php endforeach; ?>
+			
+					</tr>
+				
+				<?php endforeach; ?>
+
+			</tbody>
+		</table>
+	<?php else: ?>	
+		<?php echo $this->partial('_partials/_status/_info.phtml'); ?>
+	<?php endif; ?>
+</div>

@@ -1,0 +1,17 @@
+<div id="status" class="ui-state-highlight">
+	<p>
+		<span class="ui-icon ui-icon-check"></span>
+		<strong>Success!</strong>
+		<?php if ('trash' == $this->type): ?>
+			The item has been moved to the trash.
+		<?php elseif ('logout' == $this->type): ?>
+			You have been signed out.
+		<?php elseif ('delete' == $this->type): ?>
+			The item has been deleted.
+		<?php elseif ('restore' == $this->type): ?>
+			The item has been restored.
+		<?php else: ?>
+			Your updates have been saved.
+		<?php endif; ?>
+	</p>
+</div>

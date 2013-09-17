@@ -1,0 +1,60 @@
+<h1>
+	<a href="<?php echo $this->url(array('module' => 'admin', 'controller' => 'project', 'action' => 'index'), 'default' , true); ?>">Back to Projects</a>
+	 &gt; Editing images for <em><?php echo $this->parent->project_title; ?></em>
+</h1>
+<?php $var = $this; ?>
+<?php echo $this->partial('_partials/_status.phtml', array('view' => $this)); ?>
+
+
+<?php if (null != $this->form->getElement('id')): ?>
+
+
+<?php endif; ?>
+
+<?php
+	echo $this->partial('_partials/_form.phtml',
+		array(
+			'form' => $this->form,
+			'controllerName' => $this->controllerName,
+			'titleFieldName' => 'id',
+		)
+	);
+?>
+
+<?php
+	echo $this->partial('_partials/_table.phtml',
+		array(
+			'isTrashable' => true,
+			'isSelectable' => false,
+			'isOrderable' => false,
+			'isSortable' => true,
+			'fields' => array(
+				'id' => array(
+					'headingName' => 'ID',
+				),
+				'image_type_id' => array(
+					'headingName' => 'Image Type',
+					'viewHelperName' => 'imageType'
+				),
+				'image_name' => array(
+					'headingName' => 'Name',
+				),
+				'img_src' => array(
+					'headingName' => 'Thumb',
+					'viewHelperName' => 'projectImage'
+				),
+				'is_hidden' => array(
+					'headingName' => 'Hide?',
+					'viewHelperName' => 'checkbox'
+				),
+				'is_trashed' => array(
+					'headingName' => 'Actions',
+					'isActionField' => true,					
+				),
+			),
+			'items' => $this->items,
+			'form' => $this->form,
+			'controllerName' => $this->controllerName,
+		)
+	); 
+

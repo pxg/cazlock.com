@@ -1,0 +1,74 @@
+
+					<h1><?php echo $this->project->project_title; ?></h1>
+
+					<div class="row clearfix">
+						<p id="project-date"><?php echo date("F Y", strtotime($this->project->project_date)); ?></p>
+
+						<div id="project-description">
+
+							<?php echo $this->project->project_description; ?>
+
+						</div>
+					</div>
+
+					<?php
+
+						// enter all images
+						foreach ($this->projectImages as $key => $projectImage) {
+							switch ($projectImage->image_type_id) {
+
+								// image
+								case 1:
+									echo '
+					<div class="row">
+						<img src="/_includes/uploads/'.$projectImage->img_src.'" alt="" width="'.$projectImage->width.'" height="'.$projectImage->height.'" />
+					</div>
+									';
+
+								break;
+
+
+								// vimeo
+								case 2:
+									echo '
+					<div class="row">
+						'.$this->embedProjectVimeo($projectImage).'
+					</div>
+									';
+
+								break;
+
+
+								// flash
+								case 3:
+									echo '
+					<div class="row">
+						'.$this->embedProjectFlash($projectImage).'
+					</div>
+									';
+								break;
+
+
+								// iframe
+								case 4:
+
+									echo '
+					<div class="row">
+						<iframe width="'.$projectImage->width.'" height="'.$projectImage->height.'" src="'.$projectImage->iframe_url.'"></iframe>
+					</div>
+									';
+
+								break;
+							}
+						}
+
+
+					// condition : insert 'top' link when there is more than 1 image
+					if (count($this->projectImages) > 1) {
+						echo '
+					<div class="row">
+						<p id="top"><a href="#wrapper">Top</a></p>
+					</div>
+						';
+					}
+?>

@@ -1,0 +1,400 @@
+/*
+ * Black Flag 'default' CSS
+ */
+
+/* HTML elements */
+	body {
+		color:#000;
+		font:62.5%/1.5 Arial, Helvetica, Verdana, sans-serif; /* reset 1em to 10px */
+	}
+
+	/* headings */
+		h1, 
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight:bold;
+		}
+		
+		h1, 
+		.faux-h1 { 
+		}
+
+		h2, 
+		.faux-h2 {
+		}
+		
+		h3, 
+		.faux-h3 {
+		}
+		
+		h4, 
+		.faux-h4 {
+		}
+		
+		h5, 
+		.faux-h5 {
+		}
+		
+		h6, 
+		.faux-h6 {
+		}
+		
+		/* headings - extra classes */
+			
+
+
+	/* forms */
+		fieldset { 
+			border:0; 
+		}
+	
+		legend { 
+			display:none; 
+		}
+
+		form {
+			margin-bottom:2em;
+		}
+
+		/* reset all standard form fonts - cross-browser compatibility */
+		form * {
+			font-family:Arial, Helvetica, Verdana, sans-serif;
+		}
+
+		input {
+			font-size:1.2em;
+		}
+	
+		select {
+			font-size:1.2em;
+		}
+	
+		option {
+		}
+
+		label, 
+		form p {
+			font-size:1.2em;
+		}
+	
+		textarea {
+			border:1px solid #c0c0c0;
+			font-size:1.2em;
+			padding:3px;
+		}
+	
+		/* forms - extra classes */
+			input.text {
+				border:1px solid #c0c0c0;
+				padding:3px;
+			}
+		
+			input.text.inactive {
+				color:#999;
+				font-style:italic;
+			}
+
+			input.radio {
+				margin-right:5px;
+			}
+		
+			input.checkbox {
+				margin-right:5px;
+			}
+		
+			p.error,
+			label.error,
+			abbr.error {
+			}
+
+			button,
+			.button {
+				border:0;
+				text-align:center;
+				font-size:1.2em;
+				padding:3px;
+			}
+			
+			button:hover,
+			.button:hover {
+			}
+			
+			
+			/* forms - input containers */
+				.input-container {
+					margin-bottom:1em;
+				}
+
+				.input-container label,
+				.input-container p.label {
+					float:left;
+					width:9em;
+					margin-right:1em;
+					font-size:1.2em;
+				}
+				
+			
+	/* tables */
+		table {
+			margin-bottom:1em;
+			width:100%; 
+		}
+		
+		table caption {
+			font-size:1.2em;
+			font-weight:bold;
+		}
+	
+		thead th { 
+			font-size:1.2em;
+			font-weight:bold;
+		}
+	
+		td, 
+		th { 
+			padding:0.2em 1em;
+			font-size:1.2em; 
+			vertical-align:top;
+		}
+		
+		th { 
+			font-weight:bold; 
+		}
+	
+		/* tables - extra classes */
+			tr.odd-row td { 
+				background:#f5f5f5; 
+			}
+		
+
+	/* lists */
+		ul,
+		ol, 
+		dl {
+			font-size:1.2em;
+			margin-bottom:1.5em;
+		}
+
+		ol {
+			list-style:decimal;
+			margin-left:20px;
+		}
+		
+		ul {
+			margin-left:0;
+		}
+
+		li { }
+		
+		ul li {
+			padding-left:12px;
+		}
+		
+		ol li {
+			list-style-position: outside;
+			list-style-type: decimal;
+		}
+
+		
+		/* lists - nested lists */
+			li ol, 
+			li ul { 
+				margin:0 2em;
+			}
+			
+			li li { 
+				font-size:1em; 
+			}
+
+		/* lists - extra classes */
+			
+
+	/* text */
+		p,
+		address {
+			font-size:1.2em;
+			margin-bottom:1.5em;
+		}
+		
+		address {
+			font-style:normal;
+		}
+		
+		em { 
+			font-style:italic;
+		}
+		
+		strong {
+			font-weight:bold;
+		}
+		
+		/* text:extra classes */
+			
+
+	/* misc */
+		iframe {
+		}
+		
+		img {
+			background:transparent no-repeat left top;
+			margin-bottom:1.5em;
+		}
+		
+		/* misc:extra classes */
+
+			
+
+	/* links */
+		a {
+			outline:0; 
+			font-style:inherit; 
+			text-decoration:underline; 
+		}
+	
+		a:hover,
+		a:active,
+		a:focus { 
+		}
+		
+		a:visited {
+		}
+		
+		a:hover {
+			cursor:pointer;
+		}
+		
+		a:focus { 
+			outline:1px dotted #666;
+		}
+		
+		/* links - extra classes */
+
+		
+	
+	/* deprecated tags - alerting CMS users that they are using illegal tags */
+	/*b, big, blink, center, font, i, layer, marquee, small, u {
+			background:yellow;
+			border:2px dashed green;
+			color:red;
+			font-size:30px;
+			font-weight:bold;
+		}
+		b:after, big:after, blink:after, center:after,  font:after, i:after, layer:after, marquee:after, small:after, u:after { 
+			content:" You are using a deprecated tag; please fix." 
+		}*/
+
+
+/* Extra classes */
+	/* last element in a row */
+		.row-end {
+			margin-right:0 !important;
+		}
+	
+
+	/* last element in a vertical block */
+		.bottom {
+			margin-bottom:0 !important;
+			padding-bottom:0 !important;
+		}
+	
+	
+	/* last element in any row/column/block */
+		.last {
+			margin:0 !important;
+		}
+	
+	
+	/* print styles */
+		.printonly { 
+			display:none !important; 
+		}
+		
+		
+	/* clearfix - fixes float clearing issues */
+		 .clearfix:after { /* fixed for IE */
+			 clear:both; 
+			 content:"."; 
+			 display:block; 
+			 height:0; 
+			 visibility:hidden;
+		}
+		
+
+	/* Text included for non-visual users, hide content for screen */
+		.context {
+			height:1px; 
+			left:0px; 
+			overflow:hidden;
+			position:absolute; 
+			top:-500px;
+			width:1px; 
+		}
+		
+
+	/* Hides contents for screen, but leaves structure in place - for transparent images where the below can't be used */
+		.context-flow {
+			text-indent:-20000px;
+			background:transparent no-repeat left top;
+		}
+		
+
+	/* text that is 'replaced' by an image (via a span) */
+		.replaced {
+			position:relative;
+		}
+
+		.replaced span {
+			background:transparent no-repeat left top;
+			display:block;
+			height:100%;
+			left:-1px;
+			position:absolute;
+			top:0;
+			width:100%;
+		}
+		
+
+	/* horizontal rule (hr) - allows universal control */
+		.hr {
+			border-top:1px solid #c0c0c0; /* necessary to ensure hr is only 1px high in all browsers */
+			clear:both;
+			color:#c0c0c0; /* needed for IE */
+			height:1px;
+			margin:30px 0 30px 0;
+			padding:0;
+			line-height:0;
+		}
+
+		hr {
+			display:none;
+		}
+	
+	
+	/* horizontal navigation list */
+		.horiznavlist { }
+
+		/* float selected element and all other links */
+		.horiznavlist li {
+			display:block;
+			float:left;
+			padding:0 7px;
+			border-right:1px solid #c0c0c0;
+			background:none;
+		}
+
+		/* remove left padding from first item in a list */
+		.horiznavlist li.first {
+			padding-left:0 !important;
+			margin-left:0 !important;
+		}
+
+		/* remove right padding from last item in a list */
+		.horiznavlist li.last {
+			padding-right:0 !important;
+			border-right:0 !important;
+			margin-right:0 !important;
+		}
+

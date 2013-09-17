@@ -1,0 +1,98 @@
+<h1>Manage Projects
+<?php 
+if ($this->isEditForm) {	
+	echo '&gt; Editing <em>' . $this->form->getValue('project_title').'</em>';
+}
+?>
+</h1>
+
+<?php 
+	if ($this->isEditForm) {
+		$url = $this->url(
+			array(
+				'module' => 'admin',
+				'controller' => 'projectImages',
+				'action' => 'index',
+				'project_id' => $this->form->getValue('id')
+			),
+			'default',
+			true
+		);
+
+		
+		echo '
+		<div id="sub-nav" class="clearfix">
+			<a href="'.$url.'">Manage images for this project</a>
+		</div>
+		';
+	}
+?>
+
+<?php echo $this->partial('_partials/_status.phtml', array('view' => $this)); ?>
+
+<?php 
+	echo $this->paginationControl($this->items,
+	                                    'Sliding',
+	                                    '_partials/_pagination.phtml', array(
+											'items' => $this->items
+										)); 
+?>
+
+<?php 
+	echo $this->partial('_partials/_form.phtml', 
+		array(
+			'form' => $this->form,
+			'controllerName' => $this->controllerName,
+			'titleFieldName' => 'project_title',
+		)
+	); 
+?>
+
+<?php 
+	echo $this->partial('_partials/_table.phtml', 
+		array(
+			'isTrashable' => true,
+			'isSelectable' => false,
+			'isOrderable' => false,
+			'isSortable' => true,
+			'fields' => array(
+				
+				'project_title' => array(
+					'headingName' => 'Projects',
+				),
+				'project_thumb' => array(
+					'headingName' => 'Thumb',
+					'viewHelperName' => 'image'
+				),
+				'is_trashed' => array(
+					'headingName' => 'Images',
+					'viewHelperName' => 'projectImageCount'
+				),
+				'is_hidden' => array(
+					'headingName' => 'Hide?',
+					'viewHelperName' => 'checkbox'
+				),
+				'is_featured' => array(
+					'headingName' => 'Feature?',
+					'viewHelperName' => 'checkbox'
+				),
+				'id' => array(
+					'headingName' => 'Actions',
+					'isActionField' => true,
+				),
+				
+			),
+			'items' => $this->items,
+			'form' => $this->form,
+			'controllerName' => $this->controllerName,
+		)
+	); 
+?>
+
+<?php 
+	echo $this->paginationControl($this->items,
+	                                    'Sliding',
+	                                    '_partials/_pagination.phtml', array(
+											'items' => $this->items
+										)); 
+?>

@@ -1,0 +1,28 @@
+/* 
+ * ie6.css - css styles for Win IE <= 6
+ */
+
+/* html elements */
+	/* headings */
+
+	/* forms */
+		input { vertical-align: text-bottom; }
+		
+	/* lists */
+
+	/* text */
+
+	/* misc */
+
+	/* clearfix */
+		.clearfix { 
+			zoom:1;
+		}
+	
+/* global classes */
+	
+
+/* global ids / areas */
+	/* header */	
+		
+/* page/area-specific styles */	

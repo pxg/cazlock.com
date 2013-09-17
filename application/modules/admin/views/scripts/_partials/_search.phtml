@@ -1,0 +1,17 @@
+
+				<div id="admin-search" class="clearfix">
+					<form method="get" action="">
+						<fieldset>
+							<legend>Search</legend>
+							<div class="input-container">
+								<?php if (isset($this->searchTerm) && !empty($this->searchTerm)) : ?>
+
+									<p><a href="/admin/<?php echo $this->controllerName; ?>">clear search results</a></p>
+								<?php endif; ?>
+								
+								<input type="text" class="text" name="q" id="q" value="<?php echo $this->searchTerm; ?>" />
+								<input type="submit" class="button" value="Search" />
+							</div>
+						</fieldset>	
+					</form>
+				</div>

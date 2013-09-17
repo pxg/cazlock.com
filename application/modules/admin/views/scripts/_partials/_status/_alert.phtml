@@ -1,0 +1,17 @@
+<div id="status" class="ui-state-error">
+	<p>
+		<span class="ui-icon ui-icon-alert"></span>
+		<strong>Alert: </strong>
+		<?php if ('incompatibleBrowser' == $this->type): ?>
+			This tool requires a more up-to-date browser.  
+			You can upgrade to the latest Internet Explorer at the <a href="http://www.microsoft.com/Windows/internet-explorer/">Microsoft website</a>.
+			Or you can download and try <a href="http://www.mozilla-europe.org/en/firefox/">Mozilla Firefox</a>,
+			<a href="http://www.apple.com/safari/">Apple Safari</a>, or 
+			<a href="http://www.google.com/chrome">Google Chrome</a>.	
+		<?php elseif ('login' == $this->type): ?>
+			Incorrect login/password combination. Please try again.
+		<?php else: ?>
+			There is a problem with the form.  Please amend and try again.
+		<?php endif; ?>
+	</p>
+</div>

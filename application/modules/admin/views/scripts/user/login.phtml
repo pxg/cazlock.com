@@ -1,0 +1,13 @@
+<!--[if lt IE 8]>
+	<?php echo $this->partial('_partials/_status/_alert.phtml', array('type' => 'incompatibleBrowser'));  ?>
+<![endif]-->
+
+<?php if($this->failedValidation): ?>
+	<?php echo $this->partial('_partials/_status/_alert.phtml');  ?>
+<?php elseif($this->failedAuthentication): ?>
+	<?php echo $this->partial('_partials/_status/_alert.phtml', array('type' => 'login'));  ?>
+<?php elseif($this->loggedOut): ?>
+	<?php echo $this->partial('_partials/_status/_success.phtml', array('type' => 'logout'));  ?>
+<?php endif; ?>
+
+<?php echo $this->loginForm; ?>

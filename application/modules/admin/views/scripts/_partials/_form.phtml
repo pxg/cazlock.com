@@ -1,0 +1,29 @@
+<?php $class = (null == $this->form->getElement('id')) ? 'new' : 'edit';?>
+
+<div id="form" class="<?php echo $class; ?>">
+	<div id="form-title" class="clearfix">
+		<?php if (null == $this->form->getElement('id')): ?>		
+			<h2>Add new</h2>		
+		<?php else: ?>							
+			<h2>Edit <?php echo $this->form->getElement($this->titleFieldName)->getValue(); ?></h2>
+			<div id="action"><a href="<?php 
+				
+				$edit = array(
+					'module' => 'admin', 
+					'controller' => $this->controllerName,
+					'action' => 'index'
+				);
+				
+				if ($this->controllerName == "projectImages") {
+					$edit['project_id'] = $this->form->getValue('project_id');
+				}
+			
+				echo $this->url($edit, 'default' , true); 
+			?>">Add new</a></div>
+		<?php endif; ?>
+	</div>	
+	<?php 
+		$this->form->setAction($this->url(array('action' => 'index')));
+		echo $this->form; 
+	?>
+</div>

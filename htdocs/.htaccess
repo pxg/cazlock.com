@@ -1,0 +1,69 @@
+# PHP settings
+#php_value magic_quotes_gpc 0
+#php_value upload_max_filesize 50M
+#php_value post_max_size 60M
+#php_value max_execution_time 360
+#php_value max_input_time 360
+#php_value memory_limit 128M
+#
+# Cache settings
+#FileETag None
+#AddType image/x-icon .ico
+
+#<ifmodule expires_module>
+#    ExpiresActive On
+#	ExpiresByType image/gif M25920000
+#	ExpiresByType image/jpeg M25920000
+#	ExpiresByType image/png M25920000
+#	ExpiresByType image/x-icon M25920000
+#	ExpiresByType application/x-shockwave-flash M25920000
+#</ifmodule>
+#
+
+# Deny access to files beginning with "." - such as  .htaccess and .htpasswd files
+#<Files .*>
+#order deny,allow
+#deny from all
+#</Files>
+#
+
+# directory listing off
+#Options -Indexes
+
+
+# Deny access to .svn directories or any URLs containing .svn
+#<IfModule mod_rewrite.c>
+#RewriteEngine on
+#RewriteRule ^(.*/)?\.svn/ - [F,L]
+#ErrorDocument 403 "<h1>403 Access Forbidden</h1>"
+#</IfModule>
+#
+
+# Prevent "duplicate" pages
+#<IfModule mod_rewrite.c>
+#RewriteEngine on 
+#RewriteBase / 
+#RewriteRule ^index.html$ / [L,R=301] 
+#RewriteRule ^index.php$ / [L,R=301] 
+#RewriteRule ^([^/.]+)/index.html$ /$1/ [L,R=301] 
+#RewriteRule ^([^/.]+)/index.php$ /$1/ [L,R=301]
+#</IfModule>
+
+
+#remove www. from domain name
+#<IfModule mod_rewrite.c>
+#RewriteEngine on 
+#RewriteCond %{HTTP_HOST} !^misc\.com$ [NC]
+#RewriteRule ^(.*)$ http://misc.com/$1 [R=301,L]
+#</IfModule>
+
+
+# rewrites for main site zend framework
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
+</IfModule>

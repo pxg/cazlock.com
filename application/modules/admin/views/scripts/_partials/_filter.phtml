@@ -1,0 +1,120 @@
+<?php  if (count($this->adminStatusFilters) > 0 || !empty($this->adminDateFilterField)  || count($this->adminSourceFilters) > 0 || count($this->adminLocationFilters) > 0) : ?>
+
+			<div id="admin-filter" class="clearfix">
+				<h2>Filter results:</h2>
+				<form method="get" action="">
+
+					<?php  if (count($this->adminLocationFilters) > 1 ) : ?>
+						
+					<fieldset>
+						<legend>Location</legend>
+						<div class="input-container">
+							<label for="filter-location">Location:</label>
+							<select id="filter-location" name="filter-location">
+								<option<?php if (!$this->adminLocationFilter) { echo " selected='selected'"; } ?> value="">
+									All
+								</option>
+								
+								<?php foreach($this->adminLocationFilters as $type => $location) : ?>									
+
+								<option value="<?php echo $location['application_location'];?>"<?php if ($location['application_location'] == $this->adminLocationFilter) { echo " selected='selected'"; } ?>>
+								
+									<?php echo $location['application_location'];?>
+									
+								</option>
+								<?php endforeach; ?>
+								
+							</select>
+						</div>
+					</fieldset>
+					
+					<?php endif; ?>
+					
+					<?php  if (count($this->adminStatusFilters) > 0 ) : ?>
+						
+					<fieldset>
+						<legend>Status</legend>
+						<div class="input-container">
+							<label for="filter-status">Status:</label>
+							<select id="filter-status" name="filter-status">
+								<option<?php if (!$this->adminStatusFilter) { echo " selected='selected'"; } ?> value="">
+									All
+								</option>
+								
+								<?php foreach($this->adminStatusFilters as $filter => $method) : ?>
+
+								<option value="<?php echo $method['search_field'].'|'.$method['search_value'];?>"<?php if ($method['search_field'].'|'.$method['search_value'] == $this->adminStatusFilter['search_field'].'|'.$this->adminStatusFilter['search_value']) { echo " selected='selected'"; } ?>>
+								
+									<?php echo $method['display_name'];?>
+									
+								</option>
+								<?php endforeach; ?>
+								
+							</select>
+						</div>
+					</fieldset>
+					
+					<?php endif; ?>
+					<?php if (count($this->adminSourceFilters) > 0) : ?>
+					
+					<fieldset>
+						<legend>Source</legend>
+						<div class="input-container">
+							<label for="filter-source">Source:</label>
+							<select id="filter-source" name="filter-source">
+								<option value="">All</option>
+								
+								<?php foreach($this->adminSourceFilters as $filter => $sourceType) : ?>
+								
+								<optgroup label="<?php echo $filter; ?>">
+								
+									<?php foreach($sourceType as $key => $source) : ?>
+											
+									<option value="<?php echo $source['search_field'].'|'.$source['search_value']; ?>"<?php if ($source['search_field'].'|'.$source['search_value'] == $this->adminSourceFilter['search_field'].'|'.$this->adminSourceFilter['search_value']) { echo ' selected="selected"'; } ?>>
+										<?php echo $source['display_name']; ?> <?php if (is_int($source['search_value'])) { echo "(Source ID: ".$source['search_value'].")"; }?>
+										
+									</option>
+									<?php endforeach; ?>
+								
+								</optgroup>
+								
+								<?php endforeach; ?>
+								
+							</select>
+						</div>
+					</fieldset>
+					
+					<?php endif; ?>
+					<?php if (isset($this->adminDateFilterField) && !empty($this->adminDateFilterField)) : ?>
+					
+					<fieldset>
+						<legend>Date</legend>
+						<div class="input-container">
+							<label for="filter-date-start">Added since:</label>
+							<input type="text" name="filter-date-start" id="filter-date-start" class="text date-picker" value="<?php echo $this->adminDateFilterStart;?>" />
+							
+							<label for="filter-date-end">Added before:</label>
+							<input type="text" name="filter-date-end" id="filter-date-end" class="text date-picker" value="<?php echo $this->adminDateFilterEnd;?>" />
+						</div>
+					</fieldset>
+					
+					<?php endif; ?>
+					
+					
+					<fieldset>
+						<legend>Filter</legend>
+						<div class="input-container">
+							<input type="submit" class="button" value="Filter" />
+						</div>
+					</fieldset>
+					
+					<?php if (count($this->adminStatusFilter) > 0 || count($this->adminSourceFilter) > 0 || !empty($this->adminDateFilterStart) || !empty($this->adminDateFilterEnd)) : ?>
+						
+						<p><a href="/admin/<?php echo $this->controllerName; ?>">Reset</a></p>
+						
+					<?php endif; ?>
+					
+				
+				</form>
+			</div>
+<?php endif; ?>

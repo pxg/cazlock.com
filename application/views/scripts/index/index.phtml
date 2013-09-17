@@ -1,0 +1,45 @@
+					
+					<h1><?php echo $this->item->title; ?></h1>
+
+					<?php echo $this->item->body; ?>
+										
+					<h2>Featured Work</h2>
+
+					<?php
+						$projects = "";
+						$projectNav = "";
+					
+						foreach ($this->featuredProjects as $key => $featuredProject) {
+							$projects .= '
+							<div id="project-'.($key+1).'" class="content-block">
+								<a href="/projects/'.$featuredProject->project_slug.'">
+									<img src="/_includes/uploads/'.$featuredProject->featured_image.'" alt="'.$featuredProject->project_title.'" />
+									<span class="caption">'.$featuredProject->project_title.'</span>
+								</a>
+							</div>
+							';
+							
+							if ($key == 0) {
+								$selected = ' class="selected"';
+							} else {
+								$selected = '';
+							}
+							
+							$projectNav .= '
+								<li><a'.$selected.' href="#project-'.($key+1).'">'.($key+1).'</a></li>			
+							';
+						}
+					?>
+
+
+					<div id="featured-projects">
+						<div id="featured-projects-clip" class="clearfix">
+							<?php echo $projects; ?>
+							
+						</div>
+						
+						<ul id="featured-project-nav">
+							<?php echo $projectNav ?>
+
+						</ul>
+					</div>

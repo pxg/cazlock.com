@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+	<production>
+		<webhost>www.cazlock.com</webhost>
+		<phpSettings>
+			<display_startup_errors>0</display_startup_errors>
+			<display_errors>0</display_errors>
+			<error_reporting>8191</error_reporting>
+			<upload_max_filesize>10M</upload_max_filesize>
+			<post_max_size>20M</post_max_size>
+			<default_charset>utf-8</default_charset>
+			<date>
+				<timezone>Europe/London</timezone>
+			</date>
+		</phpSettings>
+		<includePath><zf:const zf:name="APPLICATION_PATH"/>/../library</includePath>
+		<autoloaderNamespaces>
+        	<namespace>Zend_</namespace>
+			<namespace>ZendX_</namespace>
+        	<namespace>Blackflag_</namespace>
+        </autoloaderNamespaces>
+		<pluginPaths>
+			<Blackflag_Resource></Blackflag_Resource>
+		</pluginPaths>
+		<doctype>XHTML1_STRICT</doctype>
+		<head>
+			<title>Caz Lock - Illustration Portfolio</title>
+			<meta>
+				<description>Caz Lock - Illustration Portfolio</description>
+			</meta>
+		</head>
+		<uploads>
+			<tempPath><zf:const zf:name="APPLICATION_PATH"/>/temp/</tempPath>
+			<publicPath><zf:const zf:name="APPLICATION_PATH"/>/../htdocs/_includes/uploads/</publicPath>
+		</uploads>
+		<resources>
+			<db>
+				<adapter>PDO_MYSQL</adapter>
+				<params>
+					<host>localhost</host>
+					<username>cazlock</username>
+					<password></password>
+					<dbname>livesite</dbname>
+					<charset>utf8</charset>
+				</params>
+				<isDefaultAdapter>true</isDefaultAdapter>
+			</db>
+			<cachemanager>
+				<app>
+					<enable>true</enable>
+					<frontend>
+						<name>Core</name>
+						<options>
+							<debug_header>true</debug_header>
+							<lifetime>604800</lifetime>
+							<automatic_cleaning_factor>1</automatic_cleaning_factor>
+							<automatic_serialization>true</automatic_serialization>
+						</options>
+					</frontend>
+					<backend>
+						<name>File</name>
+						<options>
+							<automatic_cleaning_factor>1</automatic_cleaning_factor>
+							<automatic_serialization>true</automatic_serialization>
+							<cache_dir><zf:const zf:name="APPLICATION_PATH"/>/data/cache</cache_dir>
+						</options>
+					</backend>
+				</app>
+			</cachemanager>
+			<frontcontroller>
+				<throwExceptions>0</throwExceptions>
+				<controllerDirectory><zf:const zf:name="APPLICATION_PATH"/>/controllers</controllerDirectory>
+				<moduleDirectory><zf:const zf:name="APPLICATION_PATH"/>/modules</moduleDirectory>
+				<actionhelperpaths>
+					<Blackflag_Controller_Action_Helper>Blackflag/Controller/Action/Helper</Blackflag_Controller_Action_Helper>
+				</actionhelperpaths>
+				<plugins>
+					<layoutloader>Blackflag_Controller_Plugin_RequestedModuleLayoutLoader</layoutloader>
+					<magicquotes>Blackflag_Controller_Plugin_DisableMagicQuotes</magicquotes>
+				</plugins>
+			</frontcontroller>
+			<layout>
+				<layout>layout</layout>
+				<layoutPath><zf:const zf:name="APPLICATION_PATH"/>/layouts/scripts</layoutPath>
+			</layout>
+			<locale>
+				<default>en</default>
+				<force>true</force>
+			</locale>
+			<log>
+				<stream>
+					<writerName>Stream</writerName>
+					<writerParams>
+						<stream><zf:const zf:name="APPLICATION_PATH"/>/data/logs/application.log</stream>
+						<mode>a</mode>
+					</writerParams>
+					<filterName>Priority</filterName>
+					<filterParams>
+						<priority>4</priority>
+					</filterParams>
+				</stream>
+			</log>
+			<mail>
+				<defaultFrom>
+					<email>admin@x.x</email>
+					<name>xx Website</name>
+				</defaultFrom>
+				<defaultTo>
+					<email>x@x.x</email>
+					<name>xx xx</name>
+				</defaultTo>
+			</mail>
+			<modules>
+				<placeholder />
+			</modules>
+			<navigation>
+				<pages>
+					<home>
+						<id>home</id>
+						<label>Home</label>
+						<route>home</route>
+						<reset_params>true</reset_params>
+						<module>default</module>
+						<controller>index</controller>
+						<action>index</action>
+					</home>
+					<about>
+						<id>about</id>
+						<label>About</label>
+						<route>about</route>
+						<reset_params>true</reset_params>
+						<module>default</module>
+						<controller>index</controller>
+						<action>about</action>
+					</about>
+					<blog>
+						<id>blog</id>
+						<label>Blog</label>
+						<uri>http://blog.cazlock.com/</uri>
+					</blog>
+					<projects>
+						<visible>0</visible>
+						<id>projects</id>
+						<label>Projects</label>
+						<route>projects</route>
+						<reset_params>true</reset_params>
+						<module>default</module>
+						<controller>projects</controller>
+						<action>index</action>
+					</projects>
+
+					<admin>
+						<visible>0</visible>
+						<label>Admin</label>
+						<module>admin</module>
+						<controller>index</controller>
+						<action>index</action>
+						<pages>
+							<project>
+								<id>projects</id>
+								<label>Projects</label>
+								<reset_params>true</reset_params>
+								<module>admin</module>
+								<controller>project</controller>
+								<action>index</action>
+							</project>
+
+							<page>
+								<id>pages</id>
+								<label>Pages</label>
+								<reset_params>true</reset_params>
+								<module>admin</module>
+								<controller>page</controller>
+								<action>index</action>
+								<resource>admin:page</resource>
+							</page>
+
+							<trash>
+								<id>trash</id>
+								<label>Trash Can</label>
+								<reset_params>true</reset_params>
+								<module>admin</module>
+								<controller>trash</controller>
+								<action>index</action>
+							</trash>
+						</pages>
+					</admin>
+				</pages>
+			</navigation>
+			<router>
+				<routes>
+					<!-- live site -->
+					<home>
+						<type>Zend_Controller_Router_Route</type>
+						<route></route>
+						<defaults>
+							<module>default</module>
+							<controller>index</controller>
+							<action>index</action>
+						</defaults>
+					</home>
+					<about>
+						<type>Zend_Controller_Router_Route</type>
+						<route>@about</route>
+						<defaults>
+							<module>default</module>
+							<controller>index</controller>
+							<action>about</action>
+						</defaults>
+					</about>
+
+					<projects>
+						<type>Zend_Controller_Router_Route</type>
+						<route>@projects</route>
+						<defaults>
+							<module>default</module>
+							<controller>project</controller>
+							<action>index</action>
+						</defaults>
+					</projects>
+					<project>
+						<type>Zend_Controller_Router_Route</type>
+						<route>@projects/:slug</route>
+						<defaults>
+							<module>default</module>
+							<controller>project</controller>
+							<action>project</action>
+							<params>
+								<slug>x</slug>
+							</params>
+						</defaults>
+					</project>
+
+
+				</routes>
+			</router>
+			<session>
+				<save_path><zf:const zf:name="APPLICATION_PATH"/>/data/sessions</save_path>
+				<gc_maxlifetime>18000</gc_maxlifetime>
+				<remember_me_seconds>18000</remember_me_seconds>
+			</session>
+			<translate>
+				<adapter>gettext</adapter>
+				<data><zf:const zf:name="APPLICATION_PATH"/>/language/</data>
+				<options>
+					<scan>directory</scan>
+					<disableNotices>true</disableNotices>
+				</options>
+			</translate>
+			<view>
+				<basePath><zf:const zf:name="APPLICATION_PATH"/>/views</basePath>
+				<encoding>UTF-8</encoding>
+				<helperPath>
+					<Blackflag_View_Helper>Blackflag/View/Helper</Blackflag_View_Helper>
+					<Blackflag_View_Helper_Navigation>Blackflag/View/Helper/Navigation</Blackflag_View_Helper_Navigation>
+					<Blackflag_View_Filter>Blackflag/View/Filter</Blackflag_View_Filter>
+					<!-- <BundlePhu_View_Helper>BundlePhu/View/Helper</BundlePhu_View_Helper> -->
+				</helperPath>
+			</view>
+		</resources>
+		<default>
+			<resources>
+				<layout>
+					<layoutPath>/layouts/scripts/</layoutPath>
+				</layout>
+			</resources>
+		</default>
+		<admin>
+			<resources>
+				<layout>
+					<layoutPath>layouts/scripts</layoutPath>
+				</layout>
+			</resources>
+			<assetPaths>
+				<uploads>/_includes/uploads/</uploads>
+				<images>/_includes/images/admin/</images>
+			</assetPaths>
+		</admin>
+		<app>
+
+		</app>
+	</production>
+
+
+	<staging extends="production"></staging>
+	<testing extends="production"></testing>
+
+
+	<development extends="production">
+		<webhost>cazlock.gingerboy.local</webhost>
+		<phpSettings>
+			<display_startup_errors>1</display_startup_errors>
+			<display_errors>1</display_errors>
+		</phpSettings>
+		<resources>
+			<db>
+				<params>
+					<host>localhost</host>
+					<username>root</username>
+					<password>root</password>
+					<dbname>cazlock</dbname>
+					<profiler>
+						<enabled>true</enabled>
+						<class>Zend_Db_Profiler_Firebug</class>
+					</profiler>
+				</params>
+			</db>
+			<frontcontroller>
+				<throwExceptions>1</throwExceptions>
+			</frontcontroller>
+			<log>
+				<firebug>
+					<writerName>Firebug</writerName>
+					<filterName>Priority</filterName>
+					<filterParams>
+						<priority>7</priority>
+					</filterParams>
+				</firebug>
+			</log>
+			<translate>
+				<options>
+					<disableNotices>false</disableNotices>
+				</options>
+			</translate>
+			<cachemanager>
+				<app>
+					<enable>true</enable>
+				</app>
+			</cachemanager>
+		</resources>
+		<app>
+			<logAdmin>false</logAdmin>
+		</app>
+	</development>
+</configdata>

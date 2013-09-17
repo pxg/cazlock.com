@@ -1,0 +1,491 @@
+/*
+ * Screen CSS
+ */
+
+/* HTML elements */
+	html {
+		background:url(../../images/site/bg_tile.jpg) transparent repeat center top;
+	}
+
+	body {
+		background:url(../../images/site/bg_top.jpg) transparent repeat-x center top fixed;
+		color:#000;
+		font-family:Georgia, "Times New Roman", serif;
+		min-height:600px;
+	}
+
+	/* headings */
+		h1, .faux-h1,
+		h2, .faux-h2,
+		h3, .faux-h3,
+		h4, .faux-h4,
+		h5, .faux-h5,
+		h6, .faux-h6 {
+			font-size:2.5em;
+			font-style:italic;
+			font-weight:normal;
+			margin:0 0 1em 0;
+		}
+
+		h1,
+		.faux-h1 {
+			background:url(../../images/site/bg_divider_wide-1_8.png) transparent no-repeat left bottom;
+			padding-bottom:3px;
+			margin-bottom:14px;
+		}
+
+		h2,
+		.faux-h2 {
+			background:url(../../images/site/bg_divider_wide-2_8.png) transparent no-repeat left bottom;
+			padding-bottom:3px;
+			margin:30px 0 17px 0;
+		}
+
+		h3,
+		.faux-h3 {
+			font-size:1.6em;
+		}
+
+		h4,
+		.faux-h4 {
+		}
+
+
+		/* headings - extra classes */
+
+
+	/* forms */
+		/* reset all standard form fonts - cross-browser compatibility */
+		form * {
+			font-family:Verdana, Arial, Helvetica, sans-serif;
+		}
+
+		textarea {
+			width:27.5em;
+		}
+
+		/* forms - extra classes */
+			input.text {
+				width:10em;
+			}
+
+			p.error,
+			label.error,
+			abbr.error {
+			}
+
+			button,
+			.button {
+				color:#fff;
+				background:#000;
+			}
+
+			button:hover,
+			.button:hover {
+				color:#fff;
+				background:#666;
+			}
+
+
+			/* forms - input containers */
+				.input-container {
+				}
+
+				.input-container ul.errors {
+					float:right;
+				}
+
+
+
+	/* tables */
+		table {
+			margin-bottom:20px;
+		}
+
+		th {
+			text-align:left;
+		}
+
+		th,
+		td {
+			padding:5px;
+		}
+
+
+	/* lists */
+		ol,
+		ul {
+			margin:0 0 25px 20px;
+		}
+
+		ol ul,
+		ul ol {
+			font-size:1em;
+			margin-top:25px;
+			margin-bottom:25px;
+		}
+
+		li {
+			/*list-style:none;*/
+			margin-bottom:10px;
+		}
+
+		/* lists - nested lists */
+
+		/* lists - extra classes */
+
+
+	/* text */
+		p { }
+
+		/* text:extra classes */
+
+
+	/* misc */
+		img {
+			margin-bottom:40px;
+		}
+
+		/* misc:extra classes */
+
+
+
+	/* links */
+		a {
+			color:#000;
+			text-decoration:none;
+		}
+
+		a:hover,
+		a:active,
+		a:focus {
+			color:#4e2c94;
+		}
+
+		a:hover {
+			text-decoration:none;
+		}
+
+
+		/* links - extra classes */
+
+
+/* global classes */
+
+	/* icons */
+		.icon span {
+			background:url(../../img/site/sprite_icons_8.png) no-repeat scroll 0 0;
+		}
+
+		.icon.x span	{ background-position:0 -20px; }
+
+
+	/* navigation */
+		ul.navigation {
+			font-size:1.2em;
+		}
+
+		ul.navigation li {
+			margin:0 4px 0 0;
+			padding:0 10px 0 0;
+			float:left;
+			list-style:none;
+			font-weight:bold;
+			background:url(../../images/site/bg_link-divider_8.png) transparent no-repeat center right;
+		}
+
+		ul.navigation li.row-end {
+			background:none;
+		}
+
+		ul.navigation li a {
+			text-decoration:none;
+			font-style:italic;
+		}
+
+		ul.navigation li a.selected,
+		ul.navigation li.active a {
+			color:#4e2c94;
+		}
+
+
+/* global ids / areas */
+	/* wrapper - surrounds all page content */
+		#wrapper {
+			width:920px;
+			margin:0 auto;
+			padding-top:40px;
+		}
+
+
+	/* content section */
+		#content {
+			width:680px;
+			margin-left:240px;
+			padding-top:3px;
+		}
+
+		#content p {
+			width:450px;
+		}
+
+
+	/* sidebar */
+		#sidebar {
+			position:fixed;
+			width:210px;
+			/*top:40px;*/
+		}
+
+
+		/* sidebar - title */
+			#sidebar #title img {
+				margin-bottom:4px;
+			}
+
+			#sidebar #title p {
+				background:url(../../images/site/bg_divider_thin-1_8.png) transparent no-repeat left top;
+				padding-top:4px;
+				margin-bottom:22px;
+			}
+
+
+		/* sidebar - page navigation */
+			#page-navigation {
+				margin-bottom:20px;
+			}
+
+			#page-navigation ul {
+				margin:0;
+				padding:8px 0 0 0;
+				background:url(../../images/site/bg_divider_thin-2_8.png) transparent no-repeat left top;
+			}
+
+			#page-navigation ul li#nav-blog {
+				background:none;
+			}
+
+
+		/* sidebar - work navigation */
+			#work-navigation { }
+
+			#work-navigation p {
+				float:left;
+				margin:0 8px 5px 0;
+			}
+
+			#work-navigation #work-navigation-list {
+				clear:both;
+			}
+
+			body.js #work-navigation-list {
+				float:left;
+				height:348px;
+				overflow:hidden;
+				position:relative;
+				padding-top:2px;
+			}
+
+			body.js #work-navigation-list-clip {
+				position:relative;
+				top:0;
+				left:2px;
+				height:100000px;
+			}
+
+			#work-navigation #work-navigation-list ul {
+				margin:0;
+				padding:0;
+			}
+
+			#work-navigation #work-navigation-list li {
+				margin:0 10px 6px 0;
+				padding:0;
+				float:left;
+				list-style:none;
+			}
+
+			#work-navigation #work-navigation-list li a {
+				display:block;
+				position:relative;
+			}
+
+			#work-navigation #work-navigation-list li a.selected span {
+				display:block;
+				position:absolute;
+				left:-2px;
+				top:-2px;
+				width:64px;
+				height:64px;
+				z-index:2;
+				background:url(../../images/site/nav_selected_24.png) transparent no-repeat left top;
+			}
+
+			#work-navigation #work-navigation-list li img {
+				margin:0;
+			}
+
+
+	/* footer */
+		#footer {
+			background:url(../../images/site/bg_divider_wide-2_8.png) transparent no-repeat left top;
+			padding-top:15px;
+			margin-top:15px;
+		}
+
+		#footer p {
+		}
+
+
+/* page/area-specific styles */
+
+	/* home page */
+		/* home : featured projects */
+			body.js #featured-projects {
+				width:680px;
+				overflow:hidden;
+				position:relative;
+			}
+
+			body.js #featured-projects-clip {
+				position:relative;
+				top:0;
+				left:0;
+				width:100000px;
+			}
+
+			body.js #featured-projects .content-block {
+				float:left;
+			}
+
+			#featured-projects .content-block {
+				position:relative;
+			}
+
+			#featured-projects .content-block img {
+				margin:0;
+			}
+
+			#featured-projects .content-block span.caption {
+				display:block;
+				position:absolute;
+				bottom:4px;
+				left:0;
+				width:auto;
+
+				margin:0;
+				padding:5px 10px;
+				background:rgba(0,0,0,0.5);
+				color:#fff;
+				font-size:2.2em;
+				font-style:italic;
+			}
+
+			/* home : featured projects : nav */
+				#featured-projects #featured-project-nav {
+					position:absolute;
+					z-index:5;
+					top:15px;
+					right:15px;
+					margin:0;
+					font-size:1.1em;
+				}
+
+				#featured-projects #featured-project-nav li {
+					list-style:none;
+					float:left;
+					padding:0;
+					margin-right:2px;
+				}
+
+				#featured-projects #featured-project-nav li a {
+					display:block;
+					background:rgba(0,0,0,0.5);
+					width:20px;
+					height:20px;
+					color:#fff;
+					text-align:center;
+					padding-top:2px; /* fixed for IE */
+					text-decoration:none;
+					border:0;
+					font-style:italic;
+				}
+
+				#featured-projects #featured-project-nav li a.selected {
+					background:rgba(0,0,0,0.8);
+				}
+
+
+	/* about page */
+		#about #contact-links {
+			margin-left:0;
+		}
+
+		#about #contact-links li {
+			display:inline;
+			list-style:none;
+		}
+
+		#about #contact-links li a {
+			display:block;
+			float:left;
+			height:16px;
+			margin-right:8px;
+			background:url(../../images/site/bg_contact-icons_8.png) transparent no-repeat left top;
+		}
+
+		#about #contact-links li a span {
+			display:block;
+		}
+
+		#about #contact-links li#contact-link-linkedin a 	{ width:16px; }
+		#about #contact-links li#contact-link-flickr a 		{ width:18px; }
+		#about #contact-links li#contact-link-twitter a 	{ width:10px; }
+		#about #contact-links li#contact-link-lastfm a 		{ width:20px; }
+		#about #contact-links li#contact-link-facebook a 	{ width:11px; height:17px;}
+		#about #contact-links li#contact-link-society6 a 	{ width:21px; height:17px;}
+
+		#about #contact-links li#contact-link-linkedin a 	{ background-position:0 0; }
+		#about #contact-links li#contact-link-flickr a 		{ background-position:-24px 0; }
+		#about #contact-links li#contact-link-twitter a 	{ background-position:-50px 0; }
+		#about #contact-links li#contact-link-lastfm a 		{ background-position:-69px 0; }
+		#about #contact-links li#contact-link-facebook a 	{ background-position:-119px 0; }
+		#about #contact-links li#contact-link-society6 a 	{ background-position:-92px 0; }
+
+
+	/* project page */
+		#project-description {
+			float:left;
+			width:500px;
+		}
+
+		#project-description a {
+			font-weight:bold;
+			font-style:italic;
+		}
+
+		p#project-date {
+			float:right;
+			width:180px;
+			text-align:right;
+		}
+
+		#project .row {
+			margin-bottom:20px;
+		}
+
+		#project .row img {
+			margin:0;
+		}
+
+		#project p#top {
+			text-align:right;
+			width:auto;
+		}
+
+		#project p#top a {
+			background:url(../../images/site/bg_arrow-top_8.png) transparent no-repeat right top;
+			padding-right:13px;
+			font-weight:bold;
+			font-style:italic;
+		}

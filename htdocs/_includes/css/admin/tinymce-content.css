@@ -1,0 +1,77 @@
+/**
+ * tinymce-content css
+ *
+ * @author richard hallows
+*/
+
+/* default styles */
+
+	body {
+		margin: 4px 4px 4px 4px;
+		padding: 0;	
+		background-color: #fff;		
+		color: #222;									
+		font: 12px/1.3 Lucida Grande, Lucida Sans, Arial, sans-serif; /* reset 1em to 10px */	
+	}
+
+	/* headings */
+	
+		h1, 
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0 0 5px 0;
+			font-family: Georgia, serif;
+			font-weight: bold;
+		}
+		
+		h3 {
+			font-size: 13px;
+		}
+		
+		h4 {
+			font-size: 12px;
+		}
+		
+		h5 {
+			font-size: 11px;
+		}
+		
+		h6 {
+			font-size: 10px;
+		}
+ 	 
+	/* links */
+
+		a {	
+			color: #2E6E9E;
+			text-decoration: none;
+		}
+		
+		a:hover {  
+			color: #E17009;
+			text-decoration: underline;
+		}
+
+			
+	/* images */
+	 
+ 		img {
+			border: 0;
+		}
+		
+	/* text */
+	
+		p {
+			font-size: 12px;
+		}
+	
+		strong {
+			font-weight: bold;
+		}
+		
+		em {
+			font-style: italic;
+		}

@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html dir="ltr" lang="en-gb">
+	<head>
+<?php echo $this->headMeta()->setIndent('		'); ?> 
+
+<?php echo $this->headTitle()->setIndent('		'); ?> 
+
+<?php echo $this->headLink()
+	->appendStylesheet('/_includes/css/site/', 'screen')
+	->appendStylesheet('/_includes/css/site/print/', 'print')
+	->appendStylesheet('/_includes/css/site/lteie8.css', 'screen', 'lte IE 8')
+	->appendStylesheet('/_includes/css/site/lteie7.css', 'screen', 'lte IE 7')
+	->appendStylesheet('/_includes/css/site/lteie6.css', 'screen', 'lte IE 6')
+	->appendStylesheet('/_includes/css/site/mobile.css', 'screen and (max-device-width: 480px)')
+->setIndent('		'); ?> 
+
+<?php echo $this->headStyle()->setIndent('		'); ?> 
+
+<?php 
+	$this->headScript()->appendFile('http://www.google.com/jsapi');
+ 	$this->headScript()->appendScript("\t\t\tgoogle.load('jquery', '1.4.2');\n");
+	
+	// condition : don't minify source JS for dev
+	$js = "/_includes/js/site/";
+	$js .= (APPLICATION_ENV == "staging" || APPLICATION_ENV == "production") ? "" : "?debug=1";
+	
+	$this->headScript()->appendFile($js)->setIndent('		'); 
+
+	echo $this->headScript();
+?> 
+	
+		<script type="text/javascript"> 
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-12425838-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		 </script>
+	</head>
+
+	<body<?php echo isset($this->placeholder('body')->{'id'}) ? ' id="'.$this->placeholder('body')->{'id'}.'"' : ''; ?><?php echo isset($this->placeholder('body')->{'class'}) ? ' class="'.$this->placeholder('body')->{'class'}.'"' : ''; ?>>
+		
+		<div id="wrapper">
+		
+			<div id="sidebar"> 
+
+				<div id="title">
+					<?php if (isset($this->placeholder('body')->{'id'}) && $this->placeholder('body')->{'id'} != "home") : ?>
+
+						<a href="/">
+					<?php endif; ?>
+
+							<img src="/_includes/images/site/logo_caz-lock_8.png" alt="Caz Lock" width="160" height="31" />
+					<?php if (isset($this->placeholder('body')->{'id'}) && $this->placeholder('body')->{'id'} != "home") : ?>
+
+						</a>
+					<?php endif; ?>
+
+					<p class="faux-h3">Illustration Portfolio</p>
+				</div>
+
+				<div id="page-navigation" class="clearfix">
+
+					<?php echo $this->navigation()->menu()->render(); ?>
+
+				</div>
+				
+				<div id="work-navigation" class="clearfix">
+					<p><strong>Work</strong></p>
+
+					<div id="work-navigation-list" class="clearfix">
+						<div id="work-navigation-list-clip">
+							
+							<?php echo $this->projects(); ?>
+
+						</div>
+					</div>
+				</div>
+
+			</div> 
+
+			<div id="content" class="clearfix">
+			
+				<?php echo $this->layout()->content; ?>
+
+				<?php echo $this->footer(); ?>
+
+			</div>
+			
+		</div> 	
+		
+	</body>
+</html>

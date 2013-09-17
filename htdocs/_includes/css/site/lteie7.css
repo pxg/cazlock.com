@@ -1,0 +1,31 @@
+/* 
+ * ie7.css - css styles for Win IE <= 7
+ */
+
+/* html elements */
+	/* headings */
+
+	/* forms */
+
+	/* lists */
+
+	/* text */
+
+	/* misc */
+		/* bicubic resizing for non-native sized IMG: code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+		img { -ms-interpolation-mode: bicubic; }
+
+	/* clearfix */
+		.clearfix {
+			display:inline-block;
+		}
+
+
+
+/* global classes */
+
+
+/* global ids / areas */
+
+
+/* page/area-specific styles */	

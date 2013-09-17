@@ -1,0 +1,93 @@
+/*
+ * Mobile CSS
+ */
+
+
+/* landscape (as default) */
+	@media (max-width: 480px) {
+		html,
+		body {	
+			height:auto;
+		}
+		
+		body {
+		}
+		
+		img,
+		object {
+			max-width:95% !important;
+			height:auto !important;
+		}
+		
+		#wrapper {
+			padding:10px;
+			width:auto;
+		}
+		
+
+		/* content section */
+			#content {
+				width:auto;
+				margin-left:0;
+			}
+		
+			#content p {
+				width:auto;
+			}
+			
+			body.js #featured-projects {
+				width:90% !important;
+			}
+			
+			body.js #featured-projects img {
+				width:100% !important;
+			}
+			
+			#featured-projects #featured-project-nav {
+				position:static;
+			}
+			
+			#project-description,
+			p#project-date {
+				float:none;
+				width:auto;
+			}
+				
+		
+		/* sidebar */
+			#sidebar {
+				position:static;
+				width:350px;
+			}
+		
+			body.js #work-navigation-list {
+				height:auto;
+				overflow:visible;
+				position:static;
+				padding-top:2px;				
+			}
+			
+			body.js #work-navigation-list-clip {
+				position:static;
+				top:0;
+				left:0;
+				height:auto;
+			}
+			
+			#work-navigation ul.navigation {
+				display:none;
+			}
+			
+			#work-navigation #work-navigation-list li a.selected span {
+				margin-left:-2px;
+				margin-top:-2px;
+			}
+
+	}
+
+/* portrait */	
+	@media (max-width: 320px) {
+			#sidebar {
+				width:210px;
+			}
+	}

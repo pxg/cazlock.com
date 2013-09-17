@@ -1,0 +1,5 @@
+				<ul class="page-navigation">
+					<?php foreach ($this->items as $i => $item): ?>
+						<li><a href="<?php echo $this->url(array(), $item['route'], true); ?>"><?php echo $this->translate($item['title']); ?></a></li>	
+					<?php endforeach; ?>
+				</ul>

@@ -1,0 +1,624 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-28 14:39-0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Pirata London <ahoy@piratalondon.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;translate;setLabel;setValue;setMessage;setLegend;append;prepend;_refresh\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: Y:\\Development\\web\\pirata\\samsung_future\n"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/Bootstrap.php:117
+msgid "Home"
+msgstr "Home"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Comment/Flag.php:37
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Flag.php:37
+msgid "Flag"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Comment/Prepopulate.php:24
+msgid "How many comments to add?"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Comment/Prepopulate.php:40
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Prepopulate.php:40
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Vote.php:51
+msgid "Add"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Full.php:23
+msgid "First Name"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Full.php:39
+#, fuzzy
+msgid "Last Name"
+msgstr "Name"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Full.php:56
+msgid "Email address"
+msgstr "Email address"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Full.php:72
+#, fuzzy
+msgid "Location"
+msgstr "Position"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Full.php:83
+msgid "Opt in?"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Full.php:100
+msgid "Idea"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Full.php:116
+msgid "Send"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/forms/Idea/Prepopulate.php:24
+msgid "How many ideas to add?"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Category/Edit.php:22
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Comment/Edit.php:22
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Idea/Edit.php:22
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Page/Edit.php:22
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Source/Edit.php:22
+msgid "Save changes"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Category/Edit.php:23
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Comment/Edit.php:23
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Idea/Edit.php:23
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Page/Edit.php:23
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/modules/admin/forms/Source/Edit.php:23
+msgid "Edit"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/views/helpers/Footer.php:23
+msgid "VAR_FOOTER_COPYRIGHT"
+msgstr "Copyright&copy; 1995-2010 SAMSUNG. All rights reserved."
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/views/helpers/Footer.php:26
+msgid "VAR_FOOTER_CONTACT"
+msgstr "<a href=\"mailto:b.walsh@samsung.com\">Contact</a>"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/views/helpers/Footer.php:27
+msgid "VAR_FOOTER_PRIVACY"
+msgstr "<a href=\"http://www.samsung.com/uk/info/privacy.html\" rel=\"external\">Privacy Policy</a>"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/views/helpers/Footer.php:28
+msgid "VAR_FOOTER_TERMS"
+msgstr "<a href=\"/terms\" rel=\"external\">Terms &amp; Conditions</a>"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/views/helpers/Footer.php:29
+msgid "VAR_FOOTER_LEGAL"
+msgstr "<a href=\"/legal\" rel=\"external\">Legal</a>"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/views/helpers/Footer.php:30
+msgid "VAR_FOOTER_PRIZES"
+msgstr "<a href=\"/prizes\" rel=\"external\">Prizes</a>"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/views/helpers/Footer.php:31
+msgid "VAR_FOOTER_SAMSUNG"
+msgstr "<a href=\"http://www.samsung.co.uk/\">Samsung</a>"
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:31
+msgid "year"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:31
+msgid "years"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:32
+msgid "week"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:32
+msgid "weeks"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:33
+msgid "day"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:33
+msgid "days"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:34
+msgid "hour"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:34
+msgid "hours"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:35
+msgid "minute"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:35
+msgid "minutes"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:36
+msgid "second"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Blackflag/View/Helper/Relativetime.php:36
+msgid "seconds"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/library/Zend/Controller/Response/Abstract.php:410
+msgid "default"
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/views/scripts/comments/prepopulate.phtml:9
+msgid "Comments added."
+msgstr ""
+
+#: Y:\Development\web\pirata\samsung_future/trunk/deploy/application/views/scripts/ideas/add.phtml:9
+msgid "Idea added."
+msgstr ""
+
+#~ msgid "Value is required and can't be empty"
+#~ msgstr "Value is required and can't be empty"
+
+#~ msgid "Company"
+#~ msgstr "Company"
+
+#~ msgid "Subscribe"
+#~ msgstr "Subscribe"
+
+#~ msgid "There was a problem with your request"
+#~ msgstr "There was a problem with your request"
+
+#~ msgid ""
+#~ "Sorry, an unexpected internal error occurred.  Please try again later."
+#~ msgstr ""
+#~ "Sorry, an unexpected internal error occurred.  Please try again later."
+
+#~ msgid "Sorry, the page you were trying to reach was not found."
+#~ msgstr "Sorry, the page you were trying to reach was not found."
+
+#~ msgid "About us"
+#~ msgstr "About us"
+
+#~ msgid "about-us"
+#~ msgstr "about-us"
+
+#~ msgid "Meet the team"
+#~ msgstr "Møt oss"
+
+#~ msgid "meet-the-team"
+#~ msgstr "mot-oss"
+
+#~ msgid "Our network"
+#~ msgstr "Nettverket og konsernet"
+
+#~ msgid "our-network"
+#~ msgstr "nettverket-og-konsernet"
+
+#~ msgid "What we do"
+#~ msgstr "Hva vi gjør"
+
+#~ msgid "what-we-do"
+#~ msgstr "hva-vi-gjor"
+
+#~ msgid "Our structure"
+#~ msgstr "Vår struktur"
+
+#~ msgid "our-structure"
+#~ msgstr "var-struktur"
+
+#~ msgid "Case studies"
+#~ msgstr "Case og eksempler"
+
+#~ msgid "case-studies"
+#~ msgstr "case-og-eksempler"
+
+#~ msgid "Who we work for"
+#~ msgstr "Hvem jobber vi med"
+
+#~ msgid "who-we-work-for"
+#~ msgstr "hvem-jobber-vi-med"
+
+#~ msgid "Blog"
+#~ msgstr "Maxus Megafon"
+
+#~ msgid "Get in touch"
+#~ msgstr "Kom i kontakt"
+
+#~ msgid "get-in-touch"
+#~ msgstr "kom-i-kontakt"
+
+#~ msgid "Careers"
+#~ msgstr "Jobb hos Maxus"
+
+#~ msgid "careers"
+#~ msgstr "jobb-hos-maxus"
+
+#~ msgid "subscribe"
+#~ msgstr "meld-deg-pa"
+
+#~ msgid "Subscribe to our weekly industry bulletin"
+#~ msgstr "Abonner på vårt ukentlige bransjen bulletin"
+
+#~ msgid "Go"
+#~ msgstr "Send"
+
+#~ msgid "abort"
+#~ msgstr "abort"
+
+#~ msgid "Call us on"
+#~ msgstr "Ring oss på"
+
+#~ msgid "Email"
+#~ msgstr "Mailadresse:"
+
+#~ msgid "Visit us at"
+#~ msgstr "Vi finnes på"
+
+#~ msgid "Map"
+#~ msgstr "Kart"
+
+#~ msgid "Investment"
+#~ msgstr "Årlig brutto investering"
+
+#~ msgid "Customer since"
+#~ msgstr "Kunde hos Maxus siden"
+
+#~ msgid "Industry"
+#~ msgstr "Bransje"
+
+#~ msgid "Account Manager"
+#~ msgstr "Kundeansvarlig"
+
+#~ msgid "Click below to view campaign assets"
+#~ msgstr "Klikk under for å se på kampanjen"
+
+#~ msgid "Thank you!  You were added to the subscription list."
+#~ msgstr "Takk for din påmelding!"
+
+#~ msgid "Introducing"
+#~ msgstr "Hils på / Møt"
+
+#~ msgid "Contact me"
+#~ msgstr "Kontakt meg"
+
+#~ msgid "Mail"
+#~ msgstr "Mail"
+
+#~ msgid "Phone"
+#~ msgstr "Direkte telefonnummer"
+
+#~ msgid "Mobile"
+#~ msgstr "Mobiltelefon"
+
+#~ msgid "Print page"
+#~ msgstr "Skriv ut siden"
+
+#~ msgid "This is a translated message"
+#~ msgstr "å holde den på nett, vær vennlig å ø é."
+
+#~ msgid "VAR_SC_HEADTITLE"
+#~ msgstr "Coca-Cola España"
+
+#~ msgid "VAR_SC_COCA-COLA_COPYRIGHT"
+#~ msgstr "Coca-Cola España. Política de privacidad y uso"
+
+#~ msgid "VAR_SC_NAVIGATION_ABOUT_THE_INSTITUTE"
+#~ msgstr "¿Quiénes somos?"
+
+#~ msgid "VAR_SC_NAVIGATION_NEWS_AND_EVENTS"
+#~ msgstr "Noticias y eventos"
+
+#~ msgid "VAR_LC_ROUTE_ABOUT"
+#~ msgstr "instituto"
+
+#~ msgid "VAR_LC_ROUTE_NEWS_AND_EVENTS"
+#~ msgstr "noticias-y-eventos"
+
+#~ msgid "VAR_LC_ROUTE_PRIVACY_POLICY"
+#~ msgstr "privacidad"
+
+#~ msgid "VAR_LC_ROUTE_CONTACT_US"
+#~ msgstr "contacto"
+
+#~ msgid "VAR_LC_ROUTE_TERMS_AND_CONDITIONS"
+#~ msgstr "term-y-con"
+
+#~ msgid "VAR_LC_ROUTE_DID_YOU_KNOW"
+#~ msgstr "sabías-qué"
+
+#~ msgid "VAR_LC_ROUTE_EVENTS"
+#~ msgstr "eventos"
+
+#~ msgid "VAR_SC_NAVIGATION_EVENTS"
+#~ msgstr "Eventos"
+
+#~ msgid "VAR_LC_ROUTE_EXPERTS"
+#~ msgstr "expertos"
+
+#~ msgid "VAR_LC_ROUTE_ARTICLE"
+#~ msgstr "artículo"
+
+#~ msgid "VAR_SC_NAVIGATION_MEET_THE_EXPERTS"
+#~ msgstr "Nuestros expertos"
+
+#~ msgid "VAR_SC_NAVIGATION_FELI"
+#~ msgstr "Feli"
+
+#~ msgid "VAR_LC_ROUTE_FELI"
+#~ msgstr "feli"
+
+#~ msgid "VAR_SC_ALL_CATEGORIES"
+#~ msgstr "Todas las categorías"
+
+#~ msgid "VAR_SC_NAVIGATION_UNDERSTANDING_HAPPINESS"
+#~ msgstr "¿Qué es la felicidad?"
+
+#~ msgid "VAR_LC_ROUTE_UNDERSTANDING_HAPPINESS"
+#~ msgstr "felicidad"
+
+#~ msgid "VAR_SC_NAVIGATION_DID_YOU_KNOW"
+#~ msgstr "¿Sabías qué…?"
+
+#~ msgid "VAR_SC_NAVIGATION_LINKS"
+#~ msgstr "Enlaces"
+
+#~ msgid "VAR_LC_ROUTE_LINKS"
+#~ msgstr "enlaces"
+
+#~ msgid "VAR_LC_ROUTE_MEDIA"
+#~ msgstr "galería"
+
+#~ msgid "VAR_SC_NAVIGATION_MEDIA"
+#~ msgstr "Galería"
+
+#~ msgid "VAR_LC_ROUTE_NEWS"
+#~ msgstr "noticias"
+
+#~ msgid "VAR_SC_NAVIGATION_NEWS"
+#~ msgstr "Noticias"
+
+#~ msgid "VAR_SC_NAVIGATION_REPORTS_AND_PUBLICATIONS"
+#~ msgstr "Informes y publicaciones"
+
+#~ msgid "VAR_LC_ROUTE_REPORTS_AND_PUBLICATIONS"
+#~ msgstr "informes-y-publicaciones"
+
+#~ msgid "VAR_SC_QUICK_LINKS"
+#~ msgstr "Enlaces"
+
+#~ msgid "VAR_SC_SKIP_TO_MAIN_NAVIGATION"
+#~ msgstr "Ir al menú principal"
+
+#~ msgid "VAR_SC_SKIP_TO_MAIN_CONTENT"
+#~ msgstr "Ir al contenido principal"
+
+#~ msgid "VAR_SC_COCA-COLA_INSTITUTE_OF_FELICIDAD"
+#~ msgstr "Instituto Coca-Cola de la Felicidad"
+
+#~ msgid "VAR_SC_MAIN_NAVIGATION"
+#~ msgstr "Menú principal"
+
+#~ msgid "VAR_LC_MEET_THE_EXPERTS"
+#~ msgstr "Nuestros expertos"
+
+#~ msgid "VAR_SC_FOOTER_COMPANY_NAME"
+#~ msgstr "Coca-Cola España"
+
+#~ msgid "VAR_SC_FOOTER_KNOW"
+#~ msgstr "Conoce Coca-Cola"
+
+#~ msgid "VAR_SC_FOOTER_CONDITIONS_OF_USE"
+#~ msgstr "Términos de uso"
+
+#~ msgid "VAR_SC_FOOTER_REGISTERED_BRANDS"
+#~ msgstr ""
+#~ "Coca-Cola y El Instituto de la Felicidad son marcas registradas de The "
+#~ "Coca-Cola Company. "
+
+#~ msgid "VAR_SC_DID_YOU_KNOW"
+#~ msgstr "¿Sabías qué…?"
+
+#~ msgid "VAR_SC_DID_YOU_KNOW_INTRO_COPY"
+#~ msgstr "Curiosidades"
+
+#~ msgid "VAR_SC_DOWNLOAD_ALL"
+#~ msgstr "Descargar todo"
+
+#~ msgid "VAR_SC_DID_YOU_KNOW_THAT"
+#~ msgstr "¿Sabías qué…?"
+
+#~ msgid "VAR_SC_DID_YOU_KNOW_QUOTES_INTRO_COPY"
+#~ msgstr "Citas"
+
+#~ msgid "VAR_SC_EXPERT_QUOTES"
+#~ msgstr "Citas de nuestros expertos"
+
+#~ msgid "VAR_SC_MORE_INFORMATION"
+#~ msgstr "Más información"
+
+#~ msgid "VAR_SC_FEATURED_EVENTS"
+#~ msgstr "Eventos destacados"
+
+#~ msgid "VAR_SC_READ_ON"
+#~ msgstr "Saber más "
+
+#~ msgid "VAR_SC_OLD_EVENTS"
+#~ msgstr "Eventos realizados"
+
+#~ msgid "VAR_SC_EVENTS"
+#~ msgstr "Eventos"
+
+#~ msgid "VAR_SC_BACK_TO_EVENTS"
+#~ msgstr "Volver a Eventos"
+
+#~ msgid "VAR_SC_GO_TO_MEDIA_GALLERY"
+#~ msgstr "Ir a la galería de imágenes   "
+
+#~ msgid "VAR_SC_EVENTS_FORTHCOMING_TITLE"
+#~ msgstr "Futuros eventos"
+
+#~ msgid "VAR_SC_ALL_EVENTS"
+#~ msgstr "Todos los eventos"
+
+#~ msgid "VAR_SC_NO_FORTHCOMING_EVENT_DATES"
+#~ msgstr "No hay próximos eventos"
+
+#~ msgid "VAR_SC_EVENT"
+#~ msgstr "Eventos"
+
+#~ msgid "VAR_SC_EXPERT_ARTICLE"
+#~ msgstr "Artículo del Experto"
+
+#~ msgid "VAR_SC_BACK_TO_EXPERTS"
+#~ msgstr "Volver a Expertos"
+
+#~ msgid "VAR_SC_GO_TO_MEDIA_GALLERY_FOR_MORE_IMAGES"
+#~ msgstr "Ir a la galería para ver más imágenes"
+
+#~ msgid "VAR_SC_GO_TO_MEDIA_GALLERY_FOR_MORE_VIDEOS"
+#~ msgstr "Ir a la galería para ver más videos"
+
+#~ msgid "VAR_CHOOSE_EXPERT"
+#~ msgstr "Conoce a nuestros expertos"
+
+#~ msgid "VAR_SC_ARTICLE_IN_FOCUS"
+#~ msgstr "Artículo destacado"
+
+#~ msgid "VAR_SC_RELATED_ARTICLES"
+#~ msgstr "Artículos relacionados"
+
+#~ msgid "VAR_SC_EXPERT"
+#~ msgstr "Experto"
+
+#~ msgid "VAR_SC_WELCOME_TO_FELI"
+#~ msgstr "Bienvenido a Feli"
+
+#~ msgid "VAR_SC_SELECT_CATEGORY"
+#~ msgstr "Categorías"
+
+#~ msgid "VAR_SC_FELI_SUBCATEGORY_INFO"
+#~ msgstr "Subcategorías"
+
+#~ msgid "VAR_SC_FELI"
+#~ msgstr "Feli"
+
+#~ msgid "VAR_SC_FELI_RELATED_POLLS"
+#~ msgstr "Bloques Feli"
+
+#~ msgid "VAR_SC_FELI_RELATED_POLLS_EXTRA"
+#~ msgstr "¡Entra en nuestra base de datos feliz!"
+
+#~ msgid "VAR_SC_CHOOSE_CATEGORY"
+#~ msgstr "Felicidad y…"
+
+#~ msgid "VAR_SC_RELATED_LINKS"
+#~ msgstr "Links relacionados"
+
+#~ msgid "VAR_SC_INSTITUTO_DE_LA_FELICIDAD"
+#~ msgstr "Instituto de la Felicidad"
+
+#~ msgid "VAR_SC_PHOTO_GALLERIES"
+#~ msgstr "Galería de imágenes   "
+
+#~ msgid "VAR_SC_VIDEO_GALLERIES"
+#~ msgstr "Video Galería"
+
+#~ msgid "VAR_SC_VIDEO"
+#~ msgstr "Presentación"
+
+#~ msgid "VAR_SC_PRESS_RELEASES"
+#~ msgstr "Noticias"
+
+#~ msgid "VAR_SC_OLD_NEWS"
+#~ msgstr "Otras noticias"
+
+#~ msgid "VAR_SC_BACK_TO_PRESS_RELEASES"
+#~ msgstr "Volver a noticias"
+
+#~ msgid "VAR_SC_IN_THE_NEWS"
+#~ msgstr "Noticia destacada"
+
+#~ msgid "VAR_SC_NEWS"
+#~ msgstr "Noticias"
+
+#~ msgid "VAR_SC_ALL_NEWS_STORIES"
+#~ msgstr "Más noticias "
+
+#~ msgid "VAR_SC_DOWNLOAD"
+#~ msgstr "Descarga"
+
+#~ msgid "VAR_SC_HOMEPAGE_INSTITUTE_NAME"
+#~ msgstr "Instituto de la Felicidad"
+
+#~ msgid "VAR_SC_HOMEPAGE_WELCOME"
+#~ msgstr "Bienvenidos"
+
+#~ msgid "VAR_SC_HOMEPAGE_FELI_TEASER_TITLE"
+#~ msgstr "¡Entra en nuestra base de datos feliz! "
+
+#~ msgid "VAR_SC_HOMEPAGE_FELI_TEASER_START_NOW"
+#~ msgstr "Explora"
+
+#~ msgid "VAR_SC_STRAPLINE"
+#~ msgstr "Las sonrisas son la mejor medicina"
+
+#~ msgid "VAR_SC_LINKS"
+#~ msgstr "Enlaces"
+
+#, fuzzy
+#~ msgid "VAR_SC_PAGETITLE"
+#~ msgstr "Coca-Cola España"
+
+#~ msgid "VAR_SC_NAVIGATION_MEDIA_GALLERY"
+#~ msgstr "Galería"
+
+#, fuzzy
+#~ msgid "VAR_SR_READ_ON"
+#~ msgstr "Saber más "
+
+#~ msgid "VAR_SC_NEWS_ABOUT_THE_INSTITUTE"
+#~ msgstr "Noticias sobre el Instituto"
+
+#~ msgid "VAR_SC_MONEY"
+#~ msgstr "Dinero"
+
+#~ msgid "VAR_SC_WORK"
+#~ msgstr "Trabajo"
+
+#~ msgid "VAR_SC_LEISURE"
+#~ msgstr "Ocio"
+
+#~ msgid "VAR_SC_HEALTH"
+#~ msgstr "Salud"
+
+#~ msgid "VAR_SC_LOVE"
+#~ msgstr "Amor"
+
+#~ msgid "VAR_SC_FOOD"
+#~ msgstr "Gastronomía"
+
+#~ msgid "VAR_SC_USEFUL_LINKS"
+#~ msgstr "Enlaces de interés"
+
+#~ msgid "VAR_SC_FAMILY_AND_FRIENDS"
+#~ msgstr "Familia y amigos"
+
+#~ msgid "VAR_SC_LAS_SONRISAS_SON_LA_MEJOR_MEDICINA"
+#~ msgstr "Las sonrisas son la mejor medicina"
+
+#~ msgid "hello world"
+#~ msgstr "ola senior!"

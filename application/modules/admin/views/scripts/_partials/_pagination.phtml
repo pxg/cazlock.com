@@ -1,0 +1,79 @@
+<?php if(count($this->items)>0) : ?>
+	
+		<div class="admin-pagination clearfix">
+			
+			<p>Showing results: <?php echo $this->firstItemNumber; ?>-<?php echo $this->lastItemNumber; ?> of <?php echo $this->totalItemCount; ?></p>
+
+			<?php if ($this->pageCount > 1): ?>
+
+			<ul class="clearfix">
+				<?php if (isset($this->previous)): ?>
+
+				<li>
+					<a href="<?php echo $this->url(array('page' => $this->first)); ?>">
+						&lt;&lt; First
+					</a>
+				</li>
+				<li>
+					
+					<a href="<?php echo $this->url(array('page' => $this->previous)); ?>">
+						&lt; Previous
+					</a>
+				</li>
+
+				<?php else: ?>
+				<li>
+					<strong>&lt;&lt; First</strong>
+				</li>
+				<li>
+					<strong>&lt; Previous</strong>
+				</li>
+				<?php endif; ?>
+				
+				
+				<?php foreach ($this->pagesInRange as $page): ?>
+				
+				<li>
+				  <?php if ($page != $this->current): ?>
+
+					<a href="<?php echo $this->url(array('page' => $page)); ?>">
+						<?php echo $page; ?>
+					</a>
+				  <?php else: ?>
+					
+					<strong><?php echo $page; ?></strong>
+				  <?php endif; ?>
+
+				</li>
+				<?php endforeach; ?>
+				
+				
+				<?php if (isset($this->next)): ?>
+				<li>
+					
+					<a href="<?php echo $this->url(array('page' => $this->next)); ?>">
+						Next &gt;
+					</a>
+				</li>
+				<li>
+					
+					<a href="<?php echo $this->url(array('page' => $this->last)); ?>">
+						Last &gt;&gt;
+					</a>
+				</li>
+				
+				<?php else: ?>
+				<li>					
+					<strong>Next &gt;</strong>
+				</li>
+				<li>					
+					<strong>Last &gt;&gt;</strong>
+				</li>
+				<?php endif; ?>
+			</ul>
+			
+			<?php endif; ?>
+			
+		</div>
+		
+<?php endif; ?>
